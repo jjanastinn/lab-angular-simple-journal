@@ -1,0 +1,16 @@
+<p>
+  entry-list works!
+</p>
+
+<div *ngIf="!entries">
+  loading..
+</div>
+
+<div>
+  <ul *ngIf="entries">
+    <li *ngFor="let entry of entries">
+      {{ entry.title }}
+      {{ entry.date }}
+    </li>
+  </ul>
+</div>
