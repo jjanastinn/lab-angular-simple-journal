@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { EntryListComponent } from './components/entry-list/entry-list.component';
 import { JournalEntriesService } from 'app/services/journal-entries.service';
+import { SingleEntryComponent } from './components/single-entry/single-entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntryListComponent
+    EntryListComponent,
+    SingleEntryComponent
   ],
   imports: [
     BrowserModule,

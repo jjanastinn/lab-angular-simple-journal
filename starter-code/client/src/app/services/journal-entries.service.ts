@@ -14,4 +14,10 @@ export class JournalEntriesService {
       .then((res: Response) => res.json());
   }
 
+  getOneEntry(entryId): Promise<any> {
+    return this.http.get(`${this.BASE_URL}/api/journal-entries/${entryId}`)
+      .toPromise()
+      .then((res: Response) => res.json());
+  }
+
 }
